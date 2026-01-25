@@ -1,0 +1,65 @@
+nav{
+    background-color: rgb(29, 33, 48) ; 
+    display: flex;
+    position: fixed;
+    width:100%;
+
+    flex-direction: horizontal;
+    justify-content: space-around;
+
+}
+h1{
+    font-size: 75px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 17px;
+}
+nav a:hover{
+    color: chocolate;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.content{
+    font-style: italic;
+    color: white;
+}
+body{
+    margin: 0%;
+}
+.projects{
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(107, 110, 149);
+}
+.project{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px ;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+.project img{
+    width: 100%;
+    border-radius: 8px;
+}
+.project:hover{
+    transform: translateY(-10px);
+}
+.firstPage{
+
+    background: linear-gradient(to bottom, rgba(26, 33, 65, 1.0), rgba(107, 110, 149 , 0.9));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height:100vh;
+}
