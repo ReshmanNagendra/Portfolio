@@ -1,6 +1,3 @@
-html{
-    scroll-behavior: smooth;
-}
 nav{
     background-color: rgb(29, 33, 48) ; 
     display: flex;
@@ -31,7 +28,6 @@ nav a:hover{
 }
 body{
     margin: 0%;
-    background-color:black;
 }
 .projects{
     display: flex;
@@ -56,7 +52,7 @@ body{
 .project:hover{
     transform: translateY(-10px);
 }
-.homePage{
+.firstPage{
 
     background: linear-gradient(to bottom, rgba(26, 33, 65, 1.0), rgba(107, 110, 149 , 0.9));
     display: flex;
@@ -66,12 +62,4 @@ body{
 
     width: 100%;
     height:100vh;
-}
-#about{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #e0e0e0;
 }
