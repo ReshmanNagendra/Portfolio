@@ -58,7 +58,8 @@ body{
 }
 .homePage{
 
-    background: linear-gradient(to bottom, rgba(26, 33, 65, 1.0), rgba(107, 110, 149 , 0.9));
+ /*   background: linear-gradient(to bottom, rgba(26, 33, 65, 1.0), rgba(107, 110, 149 , 0.9));
+   */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,4 +75,13 @@ body{
     font-size: 1.1rem;
     line-height: 1.6;
     color: #e0e0e0;
+}
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Puts the video behind content */
+    object-fit: cover; /* Ensures video covers screen without stretching */
 }
