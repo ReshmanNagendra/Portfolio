@@ -1,5 +1,10 @@
 :root{
   --primary-color: rgba(47, 134, 106, 1);
+  --secondary-color:rgb(179, 179, 179);
+}
+html{
+  scroll-behavior: smooth;
+  scrollbar-color: var(--primary-color);
 }
 html, body{
   background: #0D100E;
@@ -73,12 +78,14 @@ a{
 
 .projects {
     width: 100%;
-    min-height: 80vh;
     margin-top: -25px;
     padding: 40px;
     background: linear-gradient(0deg, rgb(17, 21, 20) 20%, rgb(26, 27, 26) 100%);
     border-radius: 25px;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 .projects h2{
     color:var(--primary-color);
@@ -91,13 +98,31 @@ a{
 }
 .project-card{
     margin: 20px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
     background-color: rgb(15, 17, 21);
     border-radius: 15px;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+.project-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.project-info {
+    color: var(--secondary-color);
+    margin-left: 10px;
+    padding: 10px;
+    flex-grow: 1;    
+}
+.project-info h3{
+    margin: 0;
+    color: var(--primary-color);
+}
+
+
 .project-card:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
