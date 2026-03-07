@@ -18,17 +18,20 @@ body{
 }
 .navbar{
     position: fixed;
-    width: 100%;
+    width: 80%;
     top:0;
     left:0;
     display: flex;
     align-items: center;
-    background-color: rgb(15, 17, 21);
+    background-color: #0D100E;
     color: white;
     justify-content:space-between;
     padding-left: 30px;
     padding-right: 20px;
     z-index: 100;
+    margin: 20px 10%;
+    border-radius: 8px;
+
 
 }
 .navbar ul{
@@ -71,8 +74,8 @@ a{
 
     width: 100%;
     height: 100vh;
-    background: radial-gradient(70% 70% at 5% 8%, rgba(84,156,133,0.2) 0%, rgba(0,0,0,0.2) 100%),
-    radial-gradient(65% 150% at 82% 82%, #0B3729 0%, #0D100E 100%);
+     background: radial-gradient(70% 70% at 5% 8%, rgba(84,156,133,0.2) 0%, rgba(0,0,0,0.2) 100%),
+    radial-gradient(65% 150% at 82% 82%, #0B3729 0%, #0D100E 100%); 
     z-index: 0;
 
     
@@ -148,7 +151,7 @@ a{
 }
 
 .skills{
-  height: 120vh;
+  height: 100vh;
   background: #0D100E;
   position: relative;
   z-index: 3;
