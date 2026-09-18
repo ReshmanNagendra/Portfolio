@@ -1,0 +1,131 @@
+.journey-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(180deg, rgba(17, 21, 20, 0.9) 0%, rgba(13, 16, 14, 0.95) 100%);
+  z-index: 2;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary-glow) 0%, var(--primary-dark) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #0D100E;
+  border: 2px solid var(--primary-glow);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  transition: transform var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-node {
+  transform: scale(1.12);
+  border-color: var(--primary-light);
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.7);
+}
+
+.timeline-node-icon {
+  color: var(--primary-light);
+}
+
+.timeline-card {
+  flex-grow: 1;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-item:hover .timeline-card {
+  transform: translateX(6px);
+  border-color: var(--border-active);
+  background: var(--bg-glass-card-hover);
+}
+
+.timeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  background: rgba(47, 134, 106, 0.2);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.timeline-institution {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.timeline-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .timeline-spine {
+    left: 20px;
+  }
+  .timeline-node {
+    width: 42px;
+    height: 42px;
+  }
+  .timeline-node-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .timeline-item {
+    gap: 16px;
+  }
+}
